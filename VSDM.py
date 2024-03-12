@@ -204,7 +204,7 @@ def check_available_envs():
     # I'm going to try to recreate this with python only,
     # I was able to before, but it was very bad code and
     # wrote to disk more than this does.
-    
+
     printv("success!")
 
 

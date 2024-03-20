@@ -1,7 +1,8 @@
 # import random
 import os
 import sys
-#import importlib.util
+
+# import importlib.util
 from re import split
 from pathlib import Path
 from runpy import run_path
@@ -161,14 +162,16 @@ known_enviornments = [
     "mate",
 ]
 
+
 def multi_env_checker():
     global wayland_desktops, x11_desktops
-    for desktop in  wayland_desktops + x11_desktops:
+    for desktop in wayland_desktops + x11_desktops:
         for x in known_enviornments:
             if desktop == x:
                 desktop = ""
         pass
-    
+
+
 def find_chosen_env():
     x11_options = []
     wayland_options = []
@@ -180,28 +183,30 @@ def find_chosen_env():
         if arguments == x[1]:
             env_checker_list.append(True)
             printv(x[1] + " true!")
+            env = "multi"
             break
         else:
             env_checker_list.append(False)
             printv(x[1] + " false...")
-            #make this a function
+            # make this a function
         if any(env_checker_list):
             for x in list(enumerate(wayland_options)):
                 if arguments == x[1][0]:
                     env_checker_list.append(True)
-                    env = 
+                    env = "wayland"
                     printv(x[1][0] + " true!")
                     break
                 else:
                     env_checker_list.append(False)
                     printv(x[1][0] + " false...")
-                    #make this a function
-                    
+                    # make this a function
+
         if any(env_checker_list):
             for x in list(enumerate(x11_options)):
                 if arguments == x[1][0]:
                     env_checker_list.append(True)
                     printv(x[1][0] + " true!")
+                    env = "x11"
                     break
                 else:
                     env_checker_list.append(False)
@@ -249,9 +254,10 @@ def check_available_envs():
             "or no wayland sessions"
         )
 
+
 def check_exec():
     pass
-    # printv("opening .desktop file...") # 
+    # printv("opening .desktop file...") #
     # if chosen_env[1] == "wayland":
     #     with open("/usr/share/", "r") as desktops:
     #         enviornments = re.split("\n", str(desktops.read()))
@@ -266,13 +272,14 @@ def v_card():
         if arg == "-v" or arg == "--verbose":
             verbose = True
 
+
 def env_filter(local_list):
-        if arguments == x[1][0]:
-            env_checker_list.append(True)
-            printv(x[1][0] + " true!")
-        else:
-            env_checker_list.append(False)
-            printv(x[1][0] + " false...")
+    if arguments == x[1][0]:
+        env_checker_list.append(True)
+        printv(x[1][0] + " true!")
+    else:
+        env_checker_list.append(False)
+        printv(x[1][0] + " false...")
 
 
 def __main__():

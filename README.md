@@ -11,6 +11,6 @@ some things this program will not have are
 * 2.proper GUI (i might do TUI, but unless theres a hyper minimal DRM option, no GUI in the base)
 
 this project uses the [black formater](https://github.com/psf/black),
-depends on sh, gnu coreutils, (optionally) startx (needed for x11 desktops), and assumes
+depends on sh, (optionally) startx (needed for x11 desktops), and assumes
 that you have the dirs ``/tmp/``, ``/usr/share/xsessions/``, 
 ``/usr/share/wayland-sessions/`` hopefully i can figure out xinit to not rely on startx though

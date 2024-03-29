@@ -4,7 +4,7 @@
 
 what is this for?
 people who want the absolute minimum for their desktop management,
-less stuff to manage the less stuff to worry about.
+less stuff to manage,the less stuff to worry about.
 
 some things this program will not have are
 * 1.user login (this is intended to do as little as possible, use agetty login)

@@ -13,4 +13,5 @@ some things this program will not have are
 this project uses the [black formater](https://github.com/psf/black),
 depends on sh, (optionally) startx (needed for x11 desktops), and assumes
 that you have the dirs ``/tmp/``, ``/usr/share/xsessions/``, 
-``/usr/share/wayland-sessions/`` hopefully i can figure out xinit to not rely on startx though
+``/usr/share/wayland-sessions/``, and ``~/.local/bin/``
+hopefully i can figure out xinit to not rely on startx though

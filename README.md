@@ -8,7 +8,7 @@ no built in login management, no gui, less points of failure.
 
 some things this program will not have are
 * 1.user login (this is intended to do as little as possible, use agetty login)
-* 2.proper GUI (i might do TUI, but unless theres a hyper minimal DRM option, no GUI)
+* 2.proper GUI (i might do TUI, but unless theres a hyper minimal DRM option, no GUI in the base)
 
 this project uses the [black formater](https://github.com/psf/black),
 depends on sh, gnu coreutils, (optionally) startx (needed for x11 desktops), and assumes

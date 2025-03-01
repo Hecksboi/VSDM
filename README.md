@@ -8,7 +8,7 @@ less stuff to manage,the less stuff to worry about.
 
 some things this program will not have are
 * 1.user login (this is intended to do as little as possible, use agetty login or elogind)
-* 2.proper GUI (i might do TUI, but unless theres a hyper minimal DRM option, no GUI in the base)
+* 2.proper GUI (i might do TUI, but unless theres a minimal DRM option, no GUI in the base)
 
 ### FUTURE GOALS
 * simple funcs to make adding a GTK qt etc GUI easier
